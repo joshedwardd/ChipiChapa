@@ -36,6 +36,7 @@ class BarangController extends Controller {
 
     public function listView(){
         $barangs = Barang::all();
+        dd($barangs);
         return view('showbarang', compact('barangs'));
     }
     
